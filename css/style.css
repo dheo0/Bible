@@ -37,7 +37,7 @@
   --radius-lg: 16px;
 
   --font-ui:   'Noto Sans KR', -apple-system, sans-serif;
-  --font-verse:'Noto Serif KR', 'Lora', Georgia, serif;
+  --font-verse:'Noto Sans KR', sans-serif;
   --font-size: 18px;
   --line-h:    1.9;
 }

@@ -7,8 +7,8 @@
 
 /* ── Bible Versions ─────────────────────────────── */
 const VERSIONS = {
-  krv:    { label: '개역한글 (KRV)', lang: 'ko', api: 'krv' },
-  korean: { label: '공동번역',        lang: 'ko', api: 'korean' },
+  korean:    { label: '개역성경 (KRV)', lang: 'ko', api: 'korean' },
+  koreankjv: { label: '한글 킹제임스역',  lang: 'ko', api: 'koreankjv' },
   kjv:    { label: 'King James Version (KJV)', lang: 'en', api: 'kjv' },
   web:    { label: 'World English Bible (WEB)', lang: 'en', api: 'web' },
   asv:    { label: 'American Standard Version (ASV)', lang: 'en', api: 'asv' },

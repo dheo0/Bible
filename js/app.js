@@ -8,7 +8,7 @@ const App = (() => {
 
   /* ── State ─────────────────────────────────────── */
   const state = {
-    version:      'krv',       // current Bible version
+    version:      'korean',     // current Bible version
     bookId:       null,        // current book (1-66)
     chapter:      null,        // current chapter
     testament:    'old',       // sidebar tab
@@ -384,9 +384,9 @@ const App = (() => {
       // Pick compare version
       const cur = state.version;
       const others = Object.keys(VERSIONS).filter(v => v !== cur);
-      const best = cur.startsWith('kr') || cur === 'korean'
+      const best = cur.startsWith('korean') || cur === 'koreankjv'
         ? (others.find(v => v === 'kjv') || others[0])
-        : (others.find(v => v === 'krv') || others[0]);
+        : (others.find(v => v === 'korean') || others[0]);
       state.compareVer = best;
       state.compareMode = true;
       dom.compareBtn.classList.add('active');
@@ -569,7 +569,7 @@ const App = (() => {
 
   /* ── URL hash navigation ───────────────────────── */
   function parseHash() {
-    // Format: #krv/43/3/16  (version/bookId/chapter[/verse])
+    // Format: #korean/43/3/16  (version/bookId/chapter[/verse])
     const hash = location.hash.slice(1);
     if (!hash) return;
     const parts = hash.split('/');

@@ -8,7 +8,7 @@
 const BibleAPI = (() => {
 
   /* ── Configuration ─────────────────────────────── */
-  const BASE = 'https://getbible.net/v2';
+  const BASE = 'https://api.getbible.net/v2';
   const CACHE_PREFIX = 'bible_ch_';
   const CACHE_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
